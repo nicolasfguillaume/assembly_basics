@@ -51,7 +51,10 @@ All syscalls have an ID associated with them, and take arguments
 All asm programs starts from the label **_start**
 
 The **stack**, like registers, is another way to store data temporarily  
-You stack data onto it. You can only see the content of the top of the stack
+You stack data onto it. You can only see the content of the top of the stack  
+- push: add data onto the top of the stack  
+- pop: remove data onto the top of the stack  
+- peek: just look at the top of the stack (w/o adding/removing any data)
 
 ## Cheat sheets
 
