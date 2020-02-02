@@ -32,3 +32,9 @@ All syscalls have an ID associated with them, and take arguments
 - r9 (arg6)
 
 All asm programs starts from the label **_start**
+
+## Cheat sheets
+
+- https://cs.brown.edu/courses/cs033/docs/guides/x64_cheatsheet.pdf
+- https://web.stanford.edu/class/cs107/guide/x86-64.html
+- http://www.ccs.neu.edu/home/ntuck/courses/2018/09/cs3650/amd64_asm.html
