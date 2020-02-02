@@ -1,10 +1,4 @@
-@ define constants
-STDIN equ 0
-STDOUT equ 1
-STDERR equ 2
-SYS_READ equ 0
-SYS_WRITE equ 1
-SYS_EXIT equ 60
+%include "constants.asm"
 
 section .data
         @ db means define bytes (each character is a byte)
