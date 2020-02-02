@@ -55,6 +55,24 @@ All asm programs starts from the label **_start**
 - bss section: where data is allocated for future use  
 - text section: where the actual code goes
 
+**Flags**, like registers, hold data. They hold only 1 bit each, either 1 or 0 (true or false):  
+Carry, Parity, Zero, Sign...
+
+**Pointers** are also registers that hold data:  
+they point to data, meaning that they hold its memory address (but they don't hold its value)
+
+Change the control flow of a program by using **jumps**:
+```asm
+_start:
+  jmp _start
+```
+  
+**Comparisons** are made on registers:
+```asm
+cmp rax, 23
+cmp rax, rbx
+```
+
 The **stack**, like registers, is another way to store data temporarily  
 You stack data onto it. You can only see the content of the top of the stack  
 - push: add data onto the top of the stack  
