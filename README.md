@@ -13,3 +13,5 @@ All syscalls have an ID associated with them, and take arguments
 - r10 (arg4)
 - r8 (arg5)
 - r9 (arg6)
+
+All asm programs starts from the label **_start**
