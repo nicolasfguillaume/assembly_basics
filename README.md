@@ -1,4 +1,4 @@
-# assembly
+# assembly hands-on
 Toy Scripts in Assembly language (x86-64). Tested on Ubuntu 18.04 on an Intel Core i7 PC.
 
 ## hello.asm
@@ -60,6 +60,11 @@ Carry, Parity, Zero, Sign...
 
 **Pointers** are also registers that hold data:  
 they point to data, meaning that they hold its memory address (but they don't hold its value)
+The default registers can be treated as pointers:  
+```asm
+mov rax, rbx      @ load the value in the rbx register to the rax register
+mov rax, [rbx]    @ load the value in the rbx register is pointing to into the rax register
+```
 
 Change the control flow of a program by using **jumps**:
 ```asm
@@ -69,9 +74,11 @@ _start:
   
 **Comparisons** are made on registers:
 ```asm
-cmp rax, 23
-cmp rax, rbx
+cmp rax, 23       @ compare rax register to 23
+cmp rax, rbx      @ compare rax register to rbx register
 ```
+After a comparison is made, certain flags are set: example `a = b` => ZF = 1
+Conditional jumps are made based on the status of the flags: `je _my_label` jumps to `_my_label` if the result of `cmp a, b` is `a = b`
 
 The **stack**, like registers, is another way to store data temporarily  
 You stack data onto it. You can only see the content of the top of the stack  
