@@ -50,6 +50,9 @@ All syscalls have an ID associated with them, and take arguments
 
 All asm programs starts from the label **_start**
 
+The **stack**, like registers, is another way to store data temporarily  
+You stack data onto it. You can only see the content of the top of the stack
+
 ## Cheat sheets
 
 - https://cs.brown.edu/courses/cs033/docs/guides/x64_cheatsheet.pdf
