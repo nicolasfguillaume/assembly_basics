@@ -5,7 +5,7 @@ Toy Scripts in Assembly language (x86-64). Tested on Ubuntu 18.04 on an Intel Co
 
 To compile:
 ```bash
-make
+make hello
 ```
 To run:
 ```bash
@@ -14,6 +14,23 @@ To run:
 Returns:
 ```bash
 >> Hello World!
+```
+
+## input.asm
+
+To compile:
+```bash
+make input
+```
+To run:
+```bash
+./input
+```
+Returns:
+```bash
+>> What is your name?
+>> Bob
+>> Hello Bob
 ```
 
 ## Assembly basics
