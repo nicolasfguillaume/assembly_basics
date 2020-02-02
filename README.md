@@ -59,7 +59,7 @@ All asm programs starts from the label **_start**
 Carry, Parity, Zero, Sign...
 
 **Pointers** are also registers that hold data:  
-they point to data, meaning that they hold its memory address (but they don't hold its value)
+They point to data, meaning that they hold its memory address (but they don't hold its value)  
 The default registers can be treated as pointers:  
 ```asm
 mov rax, rbx      @ load the value in the rbx register to the rax register
