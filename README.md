@@ -1,9 +1,9 @@
 # assembly
-Toy Scripts in Assembly language (x86-64)
+Toy Scripts in Assembly language (x86-64). Tested on Ubuntu 18.04 on an Intel Core i7 PC.
 
 ## hello.asm
 
-To compile in Ubuntu 18.04 on an Intel Core i7 PC:
+To compile:
 ```bash
 make
 ```
