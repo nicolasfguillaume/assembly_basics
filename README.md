@@ -50,6 +50,11 @@ All syscalls have an ID associated with them, and take arguments
 
 All asm programs starts from the label **_start**
 
+**Sections**:  
+- data section: where data is defined before compilation  
+- bss section: where data is allocated for future use  
+- text section: where the actual code goes
+
 The **stack**, like registers, is another way to store data temporarily  
 You stack data onto it. You can only see the content of the top of the stack  
 - push: add data onto the top of the stack  
@@ -61,3 +66,6 @@ You stack data onto it. You can only see the content of the top of the stack
 - https://cs.brown.edu/courses/cs033/docs/guides/x64_cheatsheet.pdf
 - https://web.stanford.edu/class/cs107/guide/x86-64.html
 - http://www.ccs.neu.edu/home/ntuck/courses/2018/09/cs3650/amd64_asm.html
+
+## Source
+https://www.youtube.com/watch?v=VQAKkuLL31g&list=PLetF-YjXm-sCH6FrTz4AQhfH6INDQvQSn
