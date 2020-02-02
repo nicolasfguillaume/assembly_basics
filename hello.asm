@@ -4,7 +4,6 @@ section .data
         my_text db "Hello, World!\n"
 
 section .text
-        @ define a label
         @ global means that the object file will contain a link to every label declared 'global'
         global _start
 
@@ -17,30 +16,23 @@ section .text
 
 @ all asm programs starts from the label _start
 _start:
-        @ call subroutines
         call _printHello
         call _exit
         
 @ subroutine to create a system call: sys_write(1, my_text, 14)
 _printHello:
-        @ change value of rax register: 1 (ID: sys_write)
-        mov rax, 1
-        @ change value of rdi register: 1 (arg1: file descriptor: standard output)
-        mov rdi, 1
-        @ change value of rsi register: my_text (arg2: buffer: location of string to write)
-        mov rsi, my_text
-        @ change value of rdx register: 14 (arg3: count: length of string)
-        mov rdx, 14
+        mov rax, 1          @ change value of rax register: 1 (ID: sys_write)
+        mov rdi, 1          @ change value of rdi register: 1 (arg1: file descriptor: standard output)
+        mov rsi, my_text    @ change value of rsi register: my_text (arg2: buffer: location of string to write)
+        mov rdx, 14         @ change value of rdx register: 14 (arg3: count: length of string)
         syscall
-
+        
         ret
  
  @ subroutine to create a system call: sys_exit(0)
 _exit:
-        @ change value of rax register: 60 (ID: sys_exit)
-        mov rax, 60
-        @ change value of rdi register: 0 (arg1: error code, 0 if no error)
-        mov rdi, 0
+        mov rax, 60         @ change value of rax register: 60 (ID: sys_exit)
+        mov rdi, 0          @ change value of rdi register: 0 (arg1: error code, 0 if no error)
         syscall
 
         ret
