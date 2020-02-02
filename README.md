@@ -1,6 +1,21 @@
 # assembly
 Toy Scripts in Assembly language
 
+## hello.asm
+
+To compile:
+```bash
+make
+```
+To run:
+```bash
+./hello
+```
+Returns:
+```bash
+>> Hello World!
+```
+
 **Registers** are  part of the processor that temporarly holds memory
 - in the x86_64 architecture, registers hold 64 bits
 
