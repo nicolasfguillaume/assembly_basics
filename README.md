@@ -16,6 +16,8 @@ Returns:
 >> Hello World!
 ```
 
+## Assembly basics
+
 **Registers** are  part of the processor that temporarly holds memory
 - in the x86_64 architecture, registers hold 64 bits
 
