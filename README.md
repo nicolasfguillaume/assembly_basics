@@ -1,5 +1,5 @@
 # assembly hands-on
-Basic Scripts in Assembly language (x86-64). Tested on Ubuntu 18.04 on an Intel Core i7 PC.
+Basic Scripts in Assembly language (x86_64). Tested on Ubuntu 18.04 on an Intel Core i7 PC.
 
 ## hello.asm
 
